@@ -31,8 +31,8 @@ body {
 }
 
 .title {
-	max-height: 250px;
-	max-width: 250px;
+	max-height: 200px;
+	max-width: 200px;
 }
 
 .me-arrow {
@@ -59,6 +59,7 @@ body {
 }
 
 .twitter-button {
+	width: 100%;
 	background-color: #438bd6;
 	border: none;
 	color: white;
@@ -74,6 +75,7 @@ body {
 }
 
 .kofi-button {
+	width: 100%;
 	background-color: #4CAF50;
 	border: none;
 	color: white;
@@ -89,6 +91,7 @@ body {
 }
 
 .github-button {
+	width: 100%;
 	background-color: #4d464d;
 	border: none;
 	color: white;
