@@ -30,6 +30,16 @@ body {
 	font-size: 30px;
 }
 
+.title-background {
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	max-height: 200px;
+	max-width: 350px;
+	margin-bottom: 20px;
+}
+
 .title {
 	max-height: 200px;
 	max-width: 200px;
@@ -46,23 +56,59 @@ body {
 }
 
 .main-window {
-	outline-style: solid;
-	outline-color: #e3d2f1;
-	outline-width: 4px;
-	background-color: #351352;
-	border: none;
-	padding: 10px 20px;
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	padding: 10px 10px;
 	display: inline-block;
 	font-size: 16px;
-	margin: 4px 2px;
-	border-radius: 4px;
+	margin: 0px 4px;
+	min-width: 330px;
+}
+.main-background {
+	background-color: #2b0a49;
+	box-shadow:
+		inset -6px 6px 0 #1d0732,
+		inset 6px -6px 0 #401164;
+	padding: 10px 10px;
+}
+
+.nav-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.socials-button{
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 0px 5px;
+	padding: 5px 5px 5px 5px;
+	color: black;
+}
+.about-button{
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 0px 5px;
+	padding: 5px 5px 5px 5px;
+	color: black;
 }
 
 .twitter-button {
 	width: 100%;
 	background-color: #438bd6;
-	border: none;
-	color: white;
+	box-shadow:
+		inset -4px 4px 0 #5ba0f1,
+		inset 4px -4px 0 #3070b2;
+	color:white;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
@@ -71,14 +117,15 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
-	border-radius: 4px;
 }
 
 .kofi-button {
 	width: 100%;
 	background-color: #4CAF50;
-	border: none;
-	color: white;
+	box-shadow:
+		inset -4px 4px 0 #60cd65,
+		inset 4px -4px 0 #3a8d3d;
+	color:white;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
@@ -87,14 +134,15 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
-	border-radius: 4px;
 }
 
 .github-button {
 	width: 100%;
 	background-color: #4d464d;
-	border: none;
-	color: white;
+	box-shadow:
+		inset -4px 4px 0 #726b72,
+		inset 4px -4px 0 #403940;
+	color:white;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
@@ -103,5 +151,4 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
-	border-radius: 4px;
 }
