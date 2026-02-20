@@ -21,7 +21,31 @@
 	100% {
 		transform: rotate(0deg);
 	}
+}
+
+@keyframes rotate-alt {
+    0% {
+		transform: rotate(-2deg);
+    }
+    50% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(-2deg);
+	}
 }	
+
+@keyframes floating { 
+	0%{ 
+		transform: translate(0,  0px); 
+	} 
+	50%{ 
+		transform: translate(0, 15px); 
+	} 
+	100%{
+		transform: translate(0, -0px); 
+	} 
+}   
 
 body {
 	background-color: #150424;
@@ -53,7 +77,11 @@ body {
 
 .me {
 	max-height: 350px;
-}
+	animation-name: floating; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite; 
+	animation-timing-function: ease-in-out;
+}  
 
 .main-window {
 	background-color: #c2b4cd;
