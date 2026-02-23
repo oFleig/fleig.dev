@@ -31,16 +31,23 @@
 		<link rel=icon type=image/png sizes=512x512 href=images/android-chrome-512x512.png>
 		
 		<title>Fleig</title>
+		
+		<script src="index.js"></script>
 	</head>
 	<body>
 		<center>
 			<div class="title-background">
-				<img src="images/logo.png" alt="Fleig" class="title">
+				<div class="title-inside">
+					<img src="images/logo.png" alt="Fleig" class="title">
+				</div>
 			</div>
 		</center>
 		<center>
 			<div class="nav-buttons" >
-				<a class="about-button" href="about.html">
+				<a class="navbutton active" onclick="openTab(event, 'socials')">
+					socials
+				</a>
+				<a class="navbutton" onclick="openTab(event, 'aboutme')">
 					about me
 				</a>
 			</div>
@@ -51,7 +58,7 @@
 						<img src="images/me_arrow.png" alt="Me Arrow" class="me-arrow">
 						<img src="images/me.png" alt="Me" class="me">
 					</center>
-					<div style="width: 100%; display: flex; justify-content: center">
+					<div id="socials" class="tabcontent" style="width: 100%; display: flex; justify-content: center">
 						<a href="https://x.com/_Fleig" class="twitter-button">
 						Twitter
 						</a>
@@ -61,6 +68,16 @@
 						<a href="https://github.com/oFleig" class="github-button">
 						Github
 						</a>
+					</div>
+					<div id="aboutme" class="tabcontent" style="display:none">
+						<div style="width: 100%; display: flex; justify-content: center">
+							My name is Matthew<br>
+							(more know as Fleig)<br>
+							I am a computer science<br>
+							student, i have several hobbies<br>
+							including: modding, 3d art, 2d art,<br>
+							gamedev, hardware and more
+						</div>
 					</div>
 				</div>
 			</div>
