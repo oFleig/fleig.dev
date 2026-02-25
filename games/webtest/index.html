@@ -12,11 +12,15 @@ html, body, #canvas {
 }
 
 body {
-	max-width:500px; max-height:500px;
 	color: white;
 	background-color: black;
 	overflow: hidden;
 	touch-action: none;
+}
+
+.game-area{
+	max-width: 500px;
+	max-height: 500px;
 }
 
 #canvas {
@@ -96,13 +100,17 @@ body {
 
 	</head>
 	<body>
-		<canvas id="canvas">
-			Your browser does not support the canvas tag.
-		</canvas>
+		<center>
+			<div class="game-area">
+				<canvas id="canvas">
+					Your browser does not support the canvas tag.
+				</canvas>
 
-		<noscript>
-			Your browser does not support JavaScript.
-		</noscript>
+				<noscript>
+					Your browser does not support JavaScript.
+				</noscript>
+			</div>
+		</center>
 
 		<div id="status">
 			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
