@@ -95,16 +95,13 @@
 							gamedev, hardware and more
 						</p>
 					</div>
-					<div id="games" class="tabcontent" style="display:none">
+					<div id="games" class="tabcontent" style="display:none; padding-top: 30px">
 						<p style="width: 100%; display: inline;">
-							<canvas id="canvas" style="max-width: 300px; min-height: 300px;"></canvas>
-							<script src="games/webtest/webtest.js"></script>
-							<script>
-								const MyConfig = { executable: 'godot', unloadAfterInit: false, executable: "webtest", canvasResizePolicy: 0};
-								var engine = new Engine(MyConfig);
-								engine.startGame();
-								console.log("starting game?")
-							</script>
+							<a href="https://fleig.dev/games/webtest/index.html" class="game">
+								<img src="https://fleig.dev/games/webtest/index.png" class="game-preview"></img>
+								<br>
+								game test
+							</a>
 						</p>
 					</div>
 				</div>

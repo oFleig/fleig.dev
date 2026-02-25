@@ -248,3 +248,14 @@ body {
 	cursor: pointer;
 	flex: 1;
 }
+
+.game{
+	flex: 1;
+	color:white;
+	text-decoration: none;
+}
+.game-preview{
+
+	max-height:100px;
+	max-width:100px;
+}
