@@ -1,5 +1,14 @@
-function openTab(evt, tabName) {
+window.onload = function() {
+    const names = ["Matt", "Matthew", "Matheus", "Matias", "Suehtam", "Mateo", "Matthäus", "Matthaios", "Matti", "Matthaeus", "M"]
+	const randint = Math.floor(Math.random() * names.length);
+	const randname = names[randint];
+	document.getElementById("randname").textContent = randname;
+};
+
+function openTab(evt, tabName, hideme = false) {
 	var i, tabcontent, tablinks;
+	
+	document.getElementById("mestuff").style.display = "inline";
 	
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
@@ -11,7 +20,11 @@ function openTab(evt, tabName) {
 		tablinks[i].className = tablinks[i].className = "navbutton"
 	}
 
-	document.getElementById(tabName).style.display = "flex";
+	if (hideme == true){
+		document.getElementById("mestuff").style.display = "none";
+	}
+
+	document.getElementById(tabName).style.display = "block";
 	
 	evt.currentTarget.className += " active";
-} 
+};

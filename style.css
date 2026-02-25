@@ -148,7 +148,7 @@ body {
 		inset -4px 4px 0 #5ba0f1,
 		inset 4px -4px 0 #3070b2;
 	color:white;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -156,6 +156,7 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+	flex: 1;
 }
 
 .kofi-button {
@@ -165,7 +166,7 @@ body {
 		inset -4px 4px 0 #60cd65,
 		inset 4px -4px 0 #3a8d3d;
 	color:white;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -173,6 +174,7 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+	flex: 1;
 }
 
 .github-button {
@@ -182,7 +184,7 @@ body {
 		inset -4px 4px 0 #726b72,
 		inset 4px -4px 0 #403940;
 	color:white;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -190,4 +192,59 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+	flex: 1;
+}
+
+.discord-button {
+	width: 100%;
+	background-color: #5662f6;
+	box-shadow:
+		inset -4px 4px 0 #7882ff,
+		inset 4px -4px 0 #4851bf;
+	color:white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Comfortaa-Bold;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	flex: 1;
+}
+
+.itch-button {
+	width: 100%;
+	background-color: #f85c5d;
+	box-shadow:
+		inset -4px 4px 0 #ff898a,
+		inset 4px -4px 0 #bb4c4d;
+	color:white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Comfortaa-Bold;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	flex: 1;
+}
+
+.bluesky-button {
+	width: 100%;
+	background-color: #232f40;
+	box-shadow:
+		inset -4px 4px 0 #354357,
+		inset 4px -4px 0 #151d28;
+	color:white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Comfortaa-Bold;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	flex: 1;
 }

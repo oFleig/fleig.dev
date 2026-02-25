@@ -1,0 +1,1 @@
+const MyConfig = { executable: 'godot', unloadAfterInit: false, executable: "webtest", canvasResizePolicy: 0 }
