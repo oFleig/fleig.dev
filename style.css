@@ -249,11 +249,21 @@ body {
 	flex: 1;
 }
 
+.game-container{
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	max-height: 150px;
+	max-width: 100px;
+	padding: 10px 10px;
+}
+
 .game{
-	flex: 1;
-	color:white;
+	color:black;
 	text-decoration: none;
 }
+
 .game-preview{
 
 	max-height:100px;
