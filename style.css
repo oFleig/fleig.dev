@@ -54,13 +54,54 @@ body {
 	font-size: 30px;
 }
 
+.side-bar{
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	max-height: 10px;
+	min-height: 10px;
+	min-width: 500px;
+	margin-top: 90px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.bottom-bar{
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	max-height: 10px;
+	min-height: 10px;
+	min-width: 500px;
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 20px;
+}
+
+.bottom-bar2{
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	max-height: 10px;
+	min-height: 10px;
+	min-width: 500px;
+	margin-top: 10px;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-bottom: 50px;
+}
+
 .title-background {
 	background-color: #c2b4cd;
 	box-shadow:
 		inset -4px 4px 0 #eedefa,
 		inset 4px -4px 0 #a294ad;
 	max-height: 200px;
-	max-width: 330px;
+	min-width: 330px;
 	margin-bottom: 20px;
 	padding: 10px 10px;
 }
