@@ -54,6 +54,16 @@ body {
 	font-size: 30px;
 }
 
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+
 .side-bar{
 	background-color: #c2b4cd;
 	box-shadow:
