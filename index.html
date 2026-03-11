@@ -44,88 +44,110 @@
 			</div>
 			<div class="side-bar"></div>
 		</center>
-		<center style="flex: 1;">
-			<div class="nav-buttons" >
-				<a class="navbutton active" onclick="openTab(event, 'socials')">
-					socials
-				</a>
-				<a class="navbutton" onclick="openTab(event, 'aboutme')">
-					about me
-				</a>
-				<a class="navbutton" onclick="openTab(event, 'games', true)">
-					games
-				</a>
-			</div>
-			<div class="main-window">
-				<div class="main-background">
-					<center style="animation: rotate-alt 0.75s step-end infinite">fleig's space</center>
-					<center id="mestuff">
-						<img src="images/me_arrow.png" alt="Me Arrow" class="me-arrow">
-						<img src="images/me.png" alt="Me" class="me">
-					</center>
-					<div id="socials" class="tabcontent" style="width: 100%;">
-						<div id="socials-row-1" style="width: 100%; display: flex; justify-content: center">
-							<a href="https://x.com/_Fleig" target="_blank" class="twitter-button">
-							Twitter
-							</a>
-							<a href="https://ko-fi.com/fleig" target="_blank" class="kofi-button">
-							Ko-Fi
-							</a>
-							<a href="https://github.com/oFleig" target="_blank" class="github-button">
-							Github
-							</a>
-						</div>
-						<div id="socials-row-2" style="width: 100%; display: flex; justify-content: center">
-							<a href="https://discordapp.com/users/465321709264699393" target="_blank" class="discord-button">
-							Discord
-							</a>
-							<a href="https://ofleig.itch.io/" target="_blank" class="itch-button">
-							Itch.io
-							</a>
-							<a href="https://bsky.app/profile/fleig.dev" target="_blank" class="bluesky-button">
-							Bluesky
-							</a>
-						</div>
+		<center style="width: 100%; display: flex; justify-content: center;">
+			<div style="width: 100%; padding-top: 100px;">
+				<div>
+					<div class="nav-buttons" >
+						<a class="navbutton">
+							fun fact of the day
+						</a>
 					</div>
-					<div id="aboutme" class="tabcontent" style="display:none">
-						<p style="width: 100%; display: inline;">
-							My name is <i><b><span id=randname>:)</span></b></i> <br>
-							(more know as Fleig)<br>
-							I am a computer science<br>
-							student, i have several hobbies<br>
-							including: modding, 3d art, 2d art,<br>
-							gamedev, hardware and more
-						</p>
-					</div> 
-					<div id="games" class="tabcontent" style="display:none; padding-top: 10px">
-						<div id="games-row-1" style="width: 100%; display: flex; justify-content: center"> 
-							<p class="game-container">
-								<a href="https://fleig.dev/games/fishing-minigame/index.html" class="game">
-									<img src="games/fishing-minigame/preview.png" class="game-preview"></img>
-									<br>
-									fishing minigame
-								</a>
-							</p>
-							<p class="game-container">
-								<a href="https://fleig.dev/games/flappy-bird-construct/index.html" class="game">
-									<img src="games/flappy-bird-construct/preview.png" class="game-preview"></img>
-									<br>
-									flappy bird construct
-								</a>
+					<div class="side-window">
+						<div class="main-background">
+							<p id="fact">
+								Loading fact...
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div style="width: 100%;">
+				<div class="nav-buttons" >
+					<a class="navbutton active" onclick="openTab(event, 'socials')">
+						socials
+					</a>
+					<a class="navbutton" onclick="openTab(event, 'aboutme')">
+						about me
+					</a>
+					<a class="navbutton" onclick="openTab(event, 'games', true)">
+						games
+					</a>
+				</div>
+				<div class="main-window">
+					<div class="main-background">
+						<center style="animation: rotate-alt 0.75s step-end infinite">fleig's space</center>
+						<center id="mestuff">
+							<img src="images/me_arrow.png" alt="Me Arrow" class="me-arrow">
+							<img src="images/me.png" alt="Me" class="me">
+						</center>
+						<div id="socials" class="tabcontent" style="width: 100%;">
+							<div id="socials-row-1" style="width: 100%; display: flex; justify-content: center">
+								<a href="https://x.com/_Fleig" target="_blank" class="twitter-button">
+								Twitter
+								</a>
+								<a href="https://ko-fi.com/fleig" target="_blank" class="kofi-button">
+								Ko-Fi
+								</a>
+								<a href="https://github.com/oFleig" target="_blank" class="github-button">
+								Github
+								</a>
+							</div>
+							<div id="socials-row-2" style="width: 100%; display: flex; justify-content: center">
+								<a href="https://discordapp.com/users/465321709264699393" target="_blank" class="discord-button">
+								Discord
+								</a>
+								<a href="https://ofleig.itch.io/" target="_blank" class="itch-button">
+								Itch.io
+								</a>
+								<a href="https://bsky.app/profile/fleig.dev" target="_blank" class="bluesky-button">
+								Bluesky
+								</a>
+							</div>
+						</div>
+						<div id="aboutme" class="tabcontent" style="display:none">
+							<p style="width: 100%; display: inline;">
+								My name is <i><b><span id=randname>:)</span></b></i> <br>
+								(more know as Fleig)<br>
+								I am a computer science<br>
+								student, i have several hobbies<br>
+								including: modding, 3d art, 2d art,<br>
+								gamedev, hardware and more
+							</p>
+						</div> 
+						<div id="games" class="tabcontent" style="display:none; padding-top: 10px">
+							<div id="games-row-1" style="width: 100%; display: flex; justify-content: center"> 
+								<p class="game-container">
+									<a href="https://fleig.dev/games/fishing-minigame/index.html" class="game">
+										<img src="games/fishing-minigame/preview.png" class="game-preview"></img>
+										<br>
+										fishing minigame
+									</a>
+								</p>
+								<p class="game-container">
+									<a href="https://fleig.dev/games/flappy-bird-construct/index.html" class="game">
+										<img src="games/flappy-bird-construct/preview.png" class="game-preview"></img>
+										<br>
+										flappy bird construct
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="width: 100%;">
+			</div>
 		</center>
-		<center style="margin-top: 300px;">
-			<img src="images/cleby.gif"></img>
-		</center>
-		<center style="width: 100%; display: flex; justify-content: center">
-			<div class="bottom-bar"></div>
-		</center>
-		<center style="width: 100%; display: flex; justify-content: center">
-			<div class="bottom-bar2"></div>
+		<center>
+			<center style="margin-top: 300px;">
+				<img src="images/cleby.gif"></img>
+			</center>
+			<center style="width: 100%; display: flex; justify-content: center">
+				<div class="bottom-bar"></div>
+			</center>
+			<center style="width: 100%; display: flex; justify-content: center">
+				<div class="bottom-bar2"></div>
+			</center>
 		</center>
 	</body>
 </html> 

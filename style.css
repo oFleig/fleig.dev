@@ -54,15 +54,6 @@ body {
 	font-size: 30px;
 }
 
-html, body {
-	height: 100%;
-	margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-  }
 
 .side-bar{
 	background-color: #c2b4cd;
@@ -149,6 +140,31 @@ body {
 	animation-iteration-count: infinite; 
 	animation-timing-function: ease-in-out;
 }  
+
+.side-window-invis {
+	padding: 10px 10px;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 10px;
+	margin-bottom: 15px;
+	min-width: 330px;
+	max-width: 330px;
+}
+
+.side-window {
+	background-color: #c2b4cd;
+	box-shadow:
+		inset -4px 4px 0 #eedefa,
+		inset 4px -4px 0 #a294ad;
+	padding: 10px 10px;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 10px;
+	margin-bottom: 15px;
+	min-width: 330px;
+	max-width: 330px;
+	box-shadow: 5px 5px #401164;
+}
 
 .main-window {
 	background-color: #c2b4cd;
