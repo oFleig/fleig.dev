@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
 	const factId = (dayOfYear - 1) % factsCount + 1;
 	
-	fetch(`https://fleig.dev/?id=${factId}`)
+	fetch(`https://fleig.dev/api?id=${factId}`)
     .then(response => response.text())
     .then(fact => {
       document.getElementById('fact').textContent = fact;
