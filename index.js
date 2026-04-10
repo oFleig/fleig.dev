@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const factsCount = 5;
+    const factsCount = 10;
 	const today = new Date();
 	const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
 	const factId = (dayOfYear - 1) % factsCount + 1;
