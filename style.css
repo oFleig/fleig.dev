@@ -48,7 +48,7 @@
 }   
 
 body {
-	background-color: #1e0832;
+	background-color: #41374a;
 	font-family: Comfortaa;
     color: white;
 	font-size: 30px;
@@ -67,7 +67,7 @@ body {
 	margin-top: 90px;
 	margin-left: 10px;
 	margin-right: 10px;
-	box-shadow: 5px 5px #401164;
+	box-shadow: 5px 5px #61596d;
 }
 
 .bottom-bar{
@@ -84,7 +84,7 @@ body {
 	margin-left: 200px;
 	margin-right: 200px;
 	margin-bottom: 20px;
-	box-shadow: 5px 5px #401164;
+	box-shadow: 5px 5px #61596d;
 }
 
 .bottom-bar2{
@@ -101,7 +101,7 @@ body {
 	margin-left: 300px;
 	margin-right: 300px;
 	margin-bottom: 50px;
-	box-shadow: 5px 5px #401164;
+	box-shadow: 5px 5px #61596d;
 }
 
 .title-background {
@@ -113,13 +113,13 @@ body {
 	min-width: 330px;
 	margin-bottom: 20px;
 	padding: 10px 10px;
-	box-shadow: 5px 5px #401164;
+	box-shadow: 5px 5px #61596d;
 }
 .title-inside{
-	background-color: #2b0a49;
+	background-color: #41374a;
 	box-shadow:
-		inset -6px 6px 0 #1d0732,
-		inset 6px -6px 0 #401164;
+		inset -6px 6px 0 #2b2332,
+		inset 6px -6px 0 #61596d;
 }
 
 .title {
@@ -164,7 +164,7 @@ body {
 	min-width: 330px;
 	max-width: 330px;
 	min-height: 330px;
-	box-shadow: 5px 5px #401164;
+	box-shadow: 5px 5px #61596d;
 }
 
 .main-window {
@@ -178,14 +178,14 @@ body {
 	margin: 0px 4px;
 	margin-bottom: 15px;
 	min-width: 330px;
-	box-shadow: 5px 5px #401164;
+	box-shadow: 5px 5px #61596d;
 }
 
 .main-background {
-	background-color: #2b0a49;
+	background-color: #41374a;
 	box-shadow:
-		inset -6px 6px 0 #1d0732,
-		inset 6px -6px 0 #401164;
+		inset -6px 6px 0 #2b2332,
+		inset 6px -6px 0 #61596d;
 	padding: 10px 10px;
 	min-height: 330px;
 }

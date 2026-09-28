@@ -16,10 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.onload = function() {
-    const names = ["Matt", "Matthew", "Matheus", "Matias", "Suehtam", "Mateo", "Matthäus", "Matthaios", "Matti", "Matthaeus", "M"]
-	const randint = Math.floor(Math.random() * names.length);
-	const randname = names[randint];
-	document.getElementById("randname").textContent = randname;
+    const names = ["Matt", "Matthew", "Matheus", "Matias", "Suehtam", "Mateo", "Matthäus", "Matthaios", "Matti", "Matthaeus", "M"];
+
+    setInterval(function() {
+        const randint = Math.floor(Math.random() * names.length);
+        const randname = names[randint];
+        document.getElementById("randname").textContent = randname;
+    }, 1000);
 };
 
 function openTab(evt, tabName, hideme = false) {
