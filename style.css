@@ -48,8 +48,8 @@
 }   
 
 body {
-	background-image: url("images/gray.png");'
-	font-family: Comfortaa;
+	background-image: url("https://fleig.dev/images/gray.png");
+	font-family: Comfortaa !important;
     color: white;
 	font-size: 30px;
 }
