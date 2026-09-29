@@ -48,6 +48,7 @@
 }   
 
 body {
+	background-color: #41374a;
 	background-image: url("https://fleig.dev/images/gray.png");
 	font-family: Comfortaa;
     color: white;
