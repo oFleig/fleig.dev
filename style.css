@@ -196,6 +196,20 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+.langbutton{
+	background-color: #a294ad;
+	box-shadow:
+		inset -4px 4px 0 #c2b4cd,
+		inset 4px -0px 0 #887b92;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 5px 5px;
+	padding: 5px 5px 5px 5px;
+	color: black;
+	text-decoration: none;
+}
+
 .navbutton{
 	background-color: #a294ad;
 	box-shadow:

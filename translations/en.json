@@ -1,0 +1,15 @@
+{
+  "nav.socials": "socials",
+  "nav.about": "about me",
+  "nav.funFact": "fun fact",
+  "nav.games": "games",
+  "siteTagline": "my space",
+  "about.intro": "My name is",
+  "about.alsoKnownAs": "(more commonly known as Fleig)",
+  "about.line1": "I am a computer science",
+  "about.line2": "student, and I have several hobbies",
+  "about.line3": "including modding, 3D art, 2D art,",
+  "about.line4": "gamedev, hardware and more",
+  "funFact.loading": "Loading fact...",
+  "buttons.heading": "buttons"
+}

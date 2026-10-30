@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<link rel='stylesheet' type='text/css' href='style.css'>
-		
+		<link rel="stylesheet" type="text/css" href="style.css">
+
 		<meta name="description" content="fleig's space">
 		<meta name="keywords" content="games, misc, social">
 		<meta name="author" content="Fleig">
@@ -11,27 +11,27 @@
 		<meta name="robots" content="index,follow">
 		<meta name="language" content="English">
 		<meta name="title" content="Fleig">
-		
+
 		<meta name="twitter:site" content="@_fleig">
 		<meta name="twitter:creator" content="@_fleig">
 		<meta name="twitter:title" content="Fleig">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:description" content="fleig's space">
 		<meta name="twitter:image" content="https://fleig.dev/images/card.png">
-		
+
 		<meta property="og:title" content="Fleig">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="https://fleig.dev/images/card.png">
 		<meta property="og:description" content="fleig's space">
-		
-		<link rel=apple-touch-icon sizes=180x180 href=images/apple-touch-icon.png>
-		<link rel=icon type=image/png sizes=16x16 href=images/favicon-16x16.png>
-		<link rel=icon type=image/png sizes=32x32 href=images/favicon-32x32.png>
-		<link rel=icon type=image/png sizes=192x192 href=images/android-chrome-192x192.png>
-		<link rel=icon type=image/png sizes=512x512 href=images/android-chrome-512x512.png>
-		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
 		<title>Fleig</title>
-		
+
 		<script src="index.js"></script>
 	</head>
 	<body>
@@ -45,81 +45,65 @@
 			<div class="side-bar"></div>
 		</center>
 		<center style="width: 100%; display: flex; justify-content: center;">
+			<div class="main-window">
+				<div class="main-background" style="min-height: 50px;">
+					<button class="langbutton" type="button" onclick="setLanguage('en')">English</button>
+					<button class="langbutton" type="button" onclick="setLanguage('pt-BR')">Português (Brasil)</button>
+				</div>
+			</div>
+		</center>
+		<center style="width: 100%; display: flex; justify-content: center;">
 			<div style="width: 100%;">
-				<div class="nav-buttons" >
-					<a class="navbutton active" onclick="openTab(event, 'socials')">
-						socials
-					</a>
-					<a class="navbutton" onclick="openTab(event, 'aboutme')">
-						about me
-					</a>
-					<a class="navbutton" onclick="openTab(event, 'funfact')">
-						fun fact
-					</a>
-					<a class="navbutton" onclick="openTab(event, 'games', true)">
-						games
-					</a>
+				<div class="nav-buttons">
+					<a class="navbutton active" onclick="openTab(event, 'socials')" data-i18n="nav.socials">socials</a>
+					<a class="navbutton" onclick="openTab(event, 'aboutme')" data-i18n="nav.about">about me</a>
+					<a class="navbutton" onclick="openTab(event, 'funfact')" data-i18n="nav.funFact">fun fact</a>
+					<a class="navbutton" onclick="openTab(event, 'games', true)" data-i18n="nav.games">games</a>
 				</div>
 				<div class="main-window">
 					<div class="main-background">
-						<center style="animation: rotate-alt 0.75s step-end infinite">fleig's space</center>
+						<center style="animation: rotate-alt 0.75s step-end infinite" data-i18n="siteTagline">fleig's space</center>
 						<center id="mestuff">
 							<img src="images/me_arrow.png" alt="Me Arrow" class="me-arrow">
 							<img src="images/me.png" alt="Me" class="me">
 						</center>
 						<div id="socials" class="tabcontent" style="width: 100%;">
 							<div id="socials-row-1" style="width: 100%; display: flex; justify-content: center">
-								<a href="https://x.com/_Fleig" target="_blank" class="twitter-button">
-								Twitter
-								</a>
-								<a href="https://ko-fi.com/fleig" target="_blank" class="kofi-button">
-								Ko-Fi
-								</a>
-								<a href="https://github.com/oFleig" target="_blank" class="github-button">
-								Github
-								</a>
+								<a href="https://x.com/_Fleig" target="_blank" class="twitter-button">Twitter</a>
+								<a href="https://ko-fi.com/fleig" target="_blank" class="kofi-button">Ko-Fi</a>
+								<a href="https://github.com/oFleig" target="_blank" class="github-button">Github</a>
 							</div>
 							<div id="socials-row-2" style="width: 100%; display: flex; justify-content: center">
-								<a href="https://discordapp.com/users/465321709264699393" target="_blank" class="discord-button">
-								Discord
-								</a>
-								<a href="https://ofleig.itch.io/" target="_blank" class="itch-button">
-								Itch.io
-								</a>
-								<a href="https://bsky.app/profile/fleig.dev" target="_blank" class="bluesky-button">
-								Bluesky
-								</a>
+								<a href="https://discordapp.com/users/465321709264699393" target="_blank" class="discord-button">Discord</a>
+								<a href="https://ofleig.itch.io/" target="_blank" class="itch-button">Itch.io</a>
+								<a href="https://bsky.app/profile/fleig.dev" target="_blank" class="bluesky-button">Bluesky</a>
 							</div>
 						</div>
 						<div id="aboutme" class="tabcontent" style="display:none">
 							<p style="width: 100%; display: inline;">
-								My name is<br>
-								<i><b><span id=randname>:)</span></b></i> <br>
-								(more know as Fleig)<br>
-								I am a computer science<br>
-								student, i have several hobbies<br>
-								including: modding, 3d art, 2d art,<br>
-								gamedev, hardware and more
+								<span data-i18n="about.intro">My name is</span><br>
+								<i><b><span id="randname">:)</span></b></i><br>
+								<span data-i18n="about.alsoKnownAs">(more known as Fleig)</span><br>
+								<span data-i18n="about.line1">I am a computer science</span><br>
+								<span data-i18n="about.line2">student, I have several hobbies</span><br>
+								<span data-i18n="about.line3">including: modding, 3D art, 2D art,</span><br>
+								<span data-i18n="about.line4">game development, hardware and more</span>
 							</p>
 						</div>
 						<div id="funfact" class="tabcontent" style="display:none">
-							<p id="fact" style="align-content: center; min-height: 50px; max-width: 300px" >
-								Loading fact...
-							</p>
-						</div> 
+							<p id="fact" data-i18n="funFact.loading" style="align-content: center; min-height: 50px; max-width: 300px">Loading fact...</p>
+						</div>
 						<div id="games" class="tabcontent" style="display:none; padding-top: 10px">
-							<div id="games-row-1" style="width: 100%; display: flex; justify-content: center"> 
+							<div id="games-row-1" style="width: 100%; display: flex; justify-content: center">
 								<p class="game-container">
 									<a href="https://fleig.dev/games/fishing-minigame/index.html" class="game">
-										<img src="games/fishing-minigame/preview.png" class="game-preview"></img>
-										<br>
+										<img src="games/fishing-minigame/preview.png" class="game-preview" alt="Fishing minigame preview"><br>
 										fishing minigame
 									</a>
 								</p>
 								<p class="game-container">
 									<a href="https://fleig.dev/games/flappy-bird-construct/index.html" class="game">
-										<img src="games/flappy-bird-construct/preview.png" class="game-preview"></img>
-										<br>
+										<img src="games/flappy-bird-construct/preview.png" class="game-preview" alt="Flappy Bird Construct preview"><br>
 										flappy bird construct
 									</a>
 								</p>
@@ -127,9 +111,8 @@
 							<div id="games-row-2" style="width: 100%; display: flex; justify-content: center">
 								<p class="game-container">
 									<a href="https://fleig.dev/games/bsf/index.html" class="game">
-										<img src="games/bsf/preview.png" class="game-preview"></img>
-										<br>
-										brazillian street fighting
+										<img src="games/bsf/preview.png" class="game-preview" alt="Brazilian Street Fighting preview"><br>
+										brazilian street fighting
 									</a>
 								</p>
 							</div>
@@ -140,42 +123,26 @@
 		</center>
 		<center style="width: 100%; display: flex; justify-content: center;">
 			<div class="main-window">
-				<div class="main-background"; style="min-height: 100px;">
-					buttons
+				<div class="main-background" style="min-height: 100px;">
+					<span data-i18n="buttons.heading">buttons</span>
 					<div>
-						<a href="https://neocities.org/">
-							<img src="buttons/neocities.gif" alt="Neocities: The web is yours 88x31 button">
-						</a>
+						<a href="https://neocities.org/"><img src="buttons/neocities.gif" alt="Neocities: The web is yours 88x31 button"></a>
 						<img src="buttons/graphicdesign.png" alt="graphic design is my passion 88x31 button">
-						<img src="buttons/vocaloid.gif" alt="Vocaloid NOW! 88x31 button">
-						<br>
-						<iframe src="https://lavender-but-bread.neocities.org/buttons/piano-button.html" style="border: none;" width="88" height="31"></iframe>
-						<img src="buttons/badapple.gif" alt="the entire Bad Apple!! music video on a 88x31 button">
-						<img src="buttons/kriswheretfarewe.png" alt="kris where tf are we 88x31 button">
-						<br>
-						<a href="https://playdeadlock.com">
-							<img src="buttons/deadlock.png" alt="Deadlock">
-						</a>
-						<a href="https://ivysly.com/games/your-only-move-is-hustle">
-							<img src="buttons/hustle.png" alt="Your Only Move Is HUSTLE">
-						</a>
-						<a href="https://fleig.dev">
-							<img src="buttons/fleig.png" alt="Fleig">
-						</a>
+						<img src="buttons/vocaloid.gif" alt="Vocaloid NOW! 88x31 button"><br>
+						<iframe src="https://lavender-but-bread.neocities.org/buttons/piano-button.html" style="border: none;" width="88" height="31" title="Piano button"></iframe>
+						<img src="buttons/badapple.gif" alt="the entire Bad Apple!! music video on an 88x31 button">
+						<img src="buttons/kriswheretfarewe.png" alt="kris where tf are we button"><br>
+						<a href="https://playdeadlock.com"><img src="buttons/deadlock.png" alt="Deadlock"></a>
+						<a href="https://ivysly.com/games/your-only-move-is-hustle"><img src="buttons/hustle.png" alt="Your Only Move Is HUSTLE"></a>
+						<a href="https://fleig.dev"><img src="buttons/fleig.png" alt="Fleig"></a>
 					</div>
 				</div>
 			</div>
 		</center>
 		<center>
-			<center style="margin-top: 100px;">
-				<img src="images/cleby.gif"></img>
-			</center>
-			<center style="width: 100%; display: flex; justify-content: center">
-				<div class="bottom-bar"></div>
-			</center>
-			<center style="width: 100%; display: flex; justify-content: center">
-				<div class="bottom-bar2"></div>
-			</center>
+			<center style="margin-top: 100px;"><img src="images/cleby.gif" alt=""></center>
+			<center style="width: 100%; display: flex; justify-content: center"><div class="bottom-bar"></div></center>
+			<center style="width: 100%; display: flex; justify-content: center"><div class="bottom-bar2"></div></center>
 		</center>
 	</body>
-</html> 
+</html>

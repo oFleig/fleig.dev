@@ -1,3 +1,6 @@
+let currentLanguage = "en";
+const supportedLanguages = ["en", "pt-BR"];
+
 document.addEventListener("DOMContentLoaded", () => {
     const factsCount = 12;
 	const today = new Date();
@@ -13,17 +16,57 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error fetching fact:", err);
       document.getElementById('fact').textContent = "Error loading fact.";
     });
+
+	const savedLanguage = localStorage.getItem("language");
+    const browserLanguage = navigator.language.toLowerCase();
+
+    const initialLanguage = savedLanguage ||
+        (browserLanguage === "pt-br" || browserLanguage.startsWith("pt-") || browserLanguage === "pt"
+            ? "pt-BR"
+            : "en");
+
+    setLanguage(initialLanguage);
 });
 
 window.onload = function() {
     const names = ["Matt", "Matthew", "Matheus", "Matias", "Suehtam", "Mateo", "Matthäus", "Matthaios", "Matti", "Matthaeus", "M"];
 
-    setInterval(function() {
-        const randint = Math.floor(Math.random() * names.length);
-        const randname = names[randint];
-        document.getElementById("randname").textContent = randname;
-    }, 1000);
+    //setInterval(function() {
+    //    const randint = Math.floor(Math.random() * names.length);
+    //    const randname = names[randint];
+    //    document.getElementById("randname").textContent = randname;
+    //}, 1000);
+	document.getElementById("randname").textContent = "Matheus Oliveira";
 };
+
+async function setLanguage(language) {
+    if (!supportedLanguages.includes(language)) {
+        language = "en";
+    }
+
+    try {
+        const response = await fetch(`translations/${language}.json`);
+
+        if (!response.ok) {
+            throw new Error(`Could not load ${language} translations (${response.status})`);
+        }
+
+        const translations = await response.json();
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+            const key = element.dataset.i18n;
+            if (Object.prototype.hasOwnProperty.call(translations, key)) {
+                element.textContent = translations[key];
+            }
+        });
+
+        document.documentElement.lang = language;
+        localStorage.setItem("language", language);
+    } catch (error) {
+        console.error("Translation error:", error);
+    }
+}
+
 
 function openTab(evt, tabName, hideme = false) {
 	var i, tabcontent, tablinks;
